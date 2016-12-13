@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head ng-app="ChallengerApp">
+	<meta charset="utf-8">
+
+	<title>Challenger</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="navbar navbar-default navbar-fixed-top top-navbar">
+        <div class="container app-container">
+            <div class="navbar-header">
+				<h1>Challenger</h1>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container body-content app-container">
+   		<div ng-view></div>
+	</div>
+
+	<div class="container body-content app-container" ng-controller="ChallengerController" align="center">
+ 
+		<div class="Btn" id="season" ng-click="">
+			<p>Season's Challenge!</p>
+		</div>
+		<div class="Btn" id="beginner" ng-click="">
+			<p>Beginner Challenge</p>
+		</div>
+		<div class="Btn" id="random" ng-click="random()">
+			<p>Random Challenge</p>
+		</div>
+		<div class="Btn" id="everyone" ng-click="">
+			<p>ALL THE CHALLENGES!</p>
+		</div>
+	</div>
+
+	<!-- To span the entire width of the screen, use the .btn-group-justified class:
+	 	<div class="btn-group btn-group-justified">
+  			<a href="#" class="btn btn-primary">Apple</a>
+  			<a href="#" class="btn btn-primary">Samsung</a>
+  			<a href="#" class="btn btn-primary">Sony</a>
+		</div>
+	-->
+
+	<footer>
+		<p>About us</p>
+	</footer>
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/challenger.js"></script>
+</body>
+</html>
